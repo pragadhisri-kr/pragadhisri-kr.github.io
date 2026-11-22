@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pragadhisri K – AI/ML &amp; Backend Portfolio</title>
+<style>
+:root{--bg:#f7f8fb;--card:#fff;--text:#1b2030;--muted:#5a6275;--accent:#4f46e5;--line:#e3e6ee;--chip:#eef0ff;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f121a;--card:#171b27;--text:#eceff6;--muted:#9aa3b8;--accent:#8b87ff;--line:#262c3d;--chip:#222845;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f121a;--card:#171b27;--text:#eceff6;--muted:#9aa3b8;--accent:#8b87ff;--line:#262c3d;--chip:#222845;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:18px;overflow-x:auto;padding:12px 20px;font-size:14px;white-space:nowrap}
+nav a{color:var(--muted)}nav a:hover{color:var(--accent);text-decoration:none}
+header{padding:56px 0 32px}
+.tag{display:inline-block;background:var(--chip);color:var(--accent);padding:4px 12px;border-radius:99px;font-size:13px;font-weight:600}
+h1{font-size:clamp(34px,7vw,52px);line-height:1.1;margin:14px 0 8px}
+.lead{font-size:18px;color:var(--muted);max-width:640px;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{padding:10px 18px;border-radius:10px;font-weight:600;border:1px solid var(--line);background:var(--card);color:var(--text)}
+.btn.p{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn:hover{text-decoration:none;opacity:.9}
+section{padding:30px 0}
+h2{font-size:24px;margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:14px}
+.card h3{margin:0 0 4px;font-size:18px}
+.meta{color:var(--muted);font-size:14px;margin:0 0 10px}
+.card ul{margin:8px 0 0;padding-left:20px}.card li{margin:4px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chip{background:var(--chip);color:var(--accent);padding:3px 11px;border-radius:99px;font-size:13px;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:14px 0}
+.stat{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center}
+.stat b{display:block;font-size:22px;color:var(--accent)}.stat span{font-size:12px;color:var(--muted)}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;margin:8px 0}
+.flow span{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:4px 10px}
+.flow i{color:var(--muted);font-style:normal}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.sk b{display:block;margin-bottom:4px}
+footer{padding:30px 0 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:20px}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div></nav>
+
+<div class="wrap">
+<header id="about">
+<h1>Pragadhisri K</h1>
+<p class="lead">Third-year B.Tech CSE (AI &amp; ML) student building LLM retrieval and matching systems in Python. I work with Gemini structured outputs, Neo4j/Cypher and REST APIs.</p>
+<div class="btns">
+<a class="btn p" href="https://github.com/pragadhisri-kr" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/pragadhisri06" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="mailto:pragadhisri@gmail.com">Email me</a>
+</div>
+</header>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="card">
+<h3>Multimodal GraphRAG for Documents (DocGraph)</h3>
+<p class="meta">Featured project · Team project at SRM Institute of Science and Technology</p>
+<p>A document question-answering system that turns PDFs into a Neo4j knowledge graph and answers questions with page-cited, chunk-grounded answers.</p>
+<div class="flow"><span>PDF</span><i>→</i><span>Chunks with page provenance</span><i>→</i><span>Gemini entity extraction</span><i>→</i><span>Neo4j graph</span><i>→</i><span>Cypher retrieval</span><i>→</i><span>Cited answer</span></div>
+<div class="stats">
+<div class="stat"><b>34</b><span>entities extracted</span></div>
+<div class="stat"><b>25</b><span>relationships</span></div>
+<div class="stat"><b>17</b><span>pages → 17 chunks</span></div>
+<div class="stat"><b>4</b><span>parallel workers</span></div>
+</div>
+<ul>
+<li>Gemini extracts typed entities and relationships as schema-constrained JSON; duplicates are merged by canonical key with idempotent Cypher MERGE upserts.</li>
+<li>Retrieval uses seed entities, 1–2 hop Cypher traversal and a keyword fallback.</li>
+<li>Dashboard with an interactive graph, chunk browser and Q&amp;A panel, plus REST APIs.</li>
+<li>Known limit: charts and image-only slides are not read yet. Embeddings, evaluation and Docker are next.</li>
+</ul>
+<div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Neo4j</span><span class="chip">Cypher</span><span class="chip">Google Gemini</span><span class="chip">PyMuPDF</span></div>
+<a href="https://github.com/pragadhisri-kr/DocGraph-Multimodal-GraphRAG-for-Documents" target="_blank" rel="noopener">View on GitHub →</a>
+</div>
+
+<div class="grid">
+<div class="card">
+<h3>Resume/JD Matcher</h3>
+<p class="meta">Python · Scikit-learn · PyPDF2</p>
+<p>Scores resume–job description compatibility with TF-IDF and cosine similarity, extracts resume text from PDFs and flags missing skills and keywords.</p>
+<a href="https://github.com/pragadhisri-kr/resume-jd-matcher" target="_blank" rel="noopener">View on GitHub →</a>
+</div>
+<div class="card">
+<h3>Energy Consumption Predictor</h3>
+<p class="meta">Python · Machine Learning</p>
+<p>Cleans and preprocesses historical consumption data, then trains and evaluates machine learning models to predict energy consumption.</p>
+</div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="card">
+<h3>Generative AI Intern · Prodigy InfoTech</h3>
+<p class="meta">Jan 2026 – Mar 2026</p>
+<ul><li>Explored generative AI concepts and tools.</li><li>Practised prompt engineering and applied it in an AI-based project.</li></ul>
+</div>
+<div class="card">
+<h3>Machine Learning Intern · Internship Studio</h3>
+<p class="meta">Nov 2025 – Jan 2026</p>
+<ul><li>Studied core machine learning algorithms.</li><li>Performed data analysis using Python, Jupyter Notebook and Excel.</li></ul>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card sk"><b>LLMs &amp; Retrieval</b>LLM prompting, structured JSON outputs, RAG, document search, knowledge graphs, Gemini API, TF-IDF, cosine similarity</div>
+<div class="card sk"><b>Backend &amp; Databases</b>Python, FastAPI, REST APIs, Neo4j, Cypher, SQL (basics), DBMS (basics)</div>
+<div class="card sk"><b>Languages</b>Python, C, Java (basic), HTML, CSS</div>
+<div class="card sk"><b>Tools</b>Git, GitHub, Google Colab, Jupyter Notebook, VS Code, Excel, Linux basics</div>
+<div class="card sk"><b>Soft Skills</b>Time management, communication, teamwork, problem-solving, adaptability, continuous learning</div>
+</div>
+</section>
+
+<section id="education">
+<h2>Education &amp; Certifications</h2>
+<div class="card">
+<h3>SRM Institute of Science and Technology, Tiruchirappalli</h3>
+<p class="meta">B.Tech CSE (Artificial Intelligence and Machine Learning) · Aug 2024 – Present · GPA 8.35</p>
+<p>Coursework: Python Programming, Data Structures and Algorithms, Operating Systems, Discrete Mathematics.</p>
+</div>
+<div class="card">
+<ul style="margin:0">
+<li>Hack Horizons ’25 – SRM Institute of Science and Technology (Oct 2025)</li>
+<li>Introduction to Generative AI – Google Cloud Skills Boost (Jan 2026)</li>
+<li>Machine Learning with Python – freeCodeCamp (May 2026)</li>
+<li>Intro to Machine Learning – Kaggle (Jun 2026)</li>
+</ul>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p style="margin-top:0">I’m looking for an AI/ML internship where I can build reliable backend and LLM features.</p>
+<div class="btns">
+<a class="btn p" href="mailto:pragadhisri@gmail.com">pragadhisri@gmail.com</a>
+<a class="btn" href="https://www.linkedin.com/in/pragadhisri06" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/pragadhisri-kr" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+</section>
+<footer>© 2026 Pragadhisri K · Tamil Nadu, India</footer>
+</div>
+</body>
+</html>
